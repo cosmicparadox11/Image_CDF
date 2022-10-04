@@ -13,9 +13,8 @@ def image_histogram(image):
         frequency.append(freq)
     return intensity_val,frequency
 
-path = "/home/sampath_koti/Documents/Mahabharath(2013)"
-image = path +"luffy.jpg"
-image = cv.imread("",0)
+
+image = cv.imread("animated.png",0)
 intensity_val,frequency=image_histogram(image)
 freq=np.array(frequency)
 pdf=freq/freq.sum()
